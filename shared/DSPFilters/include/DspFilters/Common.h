@@ -57,7 +57,7 @@ THE SOFTWARE.
 #include <vector>
 #include <algorithm>
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) && _MSC_VER < 1920
 namespace tr1 = std::tr1;
 #else
 namespace tr1 = std;
